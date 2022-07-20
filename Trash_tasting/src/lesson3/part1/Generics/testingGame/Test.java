@@ -12,7 +12,7 @@ public class Test {
 
         System.out.println("Привет Username!" + "\n");
 
-        AnnoyingCounter.count();
+//        AnnoyingCounter.count();
 
         ParticipantsRegistration.infinityRegistration();
 

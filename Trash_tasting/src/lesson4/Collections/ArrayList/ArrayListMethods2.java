@@ -30,6 +30,7 @@ public class ArrayListMethods2 {
 
         List<Integer> intList = List.of(1, 2, 3); //быстрое создание листа с необходимыми данными
         // Ќ≈Ћ№«я ћќƒ»‘»÷»–ќ¬ј“№!!! Ќ≈Ћ№«я ƒќЅј¬Ћя“№ NULL
+        intList.add(4); //даст UnsupportedOperationException
 
 
         List<String> list4 = List.copyOf(list1); //быстрое копирование листа с необходимыми данными

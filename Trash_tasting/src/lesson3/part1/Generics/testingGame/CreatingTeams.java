@@ -14,7 +14,7 @@ public class CreatingTeams {
         return name;
     }
     public void teamNaming() {
-        System.out.println("Введите название команды: ");
+        System.out.println("Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РєРѕРјР°РЅРґС‹: ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         while (true) {
@@ -22,48 +22,48 @@ public class CreatingTeams {
                 if (!(name = reader.readLine()).equals("")) {
                     break;
                 }
-                System.err.println("Имя команды не может быть пустым");
+                System.err.println("РРјСЏ РєРѕРјР°РЅРґС‹ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РїСѓСЃС‚С‹Рј");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         }
-        System.out.println("Кто будет состоять в данной команде?");
-        System.out.println("\"Ш\" для школьников");
-        System.out.println("\"С\" для студентов");
-        System.out.println("\"Р\" для работяг");
+        System.out.println("РљС‚Рѕ Р±СѓРґРµС‚ СЃРѕСЃС‚РѕСЏС‚СЊ РІ РґР°РЅРЅРѕР№ РєРѕРјР°РЅРґРµ?");
+        System.out.println("\"РЁ\" РґР»СЏ С€РєРѕР»СЊРЅРёРєРѕРІ");
+        System.out.println("\"РЎ\" РґР»СЏ СЃС‚СѓРґРµРЅС‚РѕРІ");
+        System.out.println("\"Р \" РґР»СЏ СЂР°Р±РѕС‚СЏРі");
 
 
         while (true) {
             try {
                 if (!(comand = reader.readLine()).equals("")) {
-                    if (comand.equals("ш") || comand.equals("Ш") || comand.equals("С") || comand.equals("с")
-                            || comand.equals("Р") || comand.equals("р")) {
+                    if (comand.equals("С€") || comand.equals("РЁ") || comand.equals("РЎ") || comand.equals("СЃ")
+                            || comand.equals("Р ") || comand.equals("СЂ")) {
                         break;
                     }
                 }
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-            System.err.println("Может быть только Ш, С или Р");
+            System.err.println("РњРѕР¶РµС‚ Р±С‹С‚СЊ С‚РѕР»СЊРєРѕ РЁ, РЎ РёР»Рё Р ");
         }
     }
 
     public void createTeam() {
 
-        if (comand.equals("Ш") || comand.equals("ш")) {
-            System.out.println("Создана команда шкильников с именем: " + name);
+        if (comand.equals("РЁ") || comand.equals("С€")) {
+            System.out.println("РЎРѕР·РґР°РЅР° РєРѕРјР°РЅРґР° С€РєРёР»СЊРЅРёРєРѕРІ СЃ РёРјРµРЅРµРј: " + name);
             System.out.println(ParticipantsRegistration.getScoolarTempList());
         }
 
 
-        if (comand.equals("С") || comand.equals("с")) {
-            System.out.println("Создана команда студенов с именем: " + name);
+        if (comand.equals("РЎ") || comand.equals("СЃ")) {
+            System.out.println("РЎРѕР·РґР°РЅР° РєРѕРјР°РЅРґР° СЃС‚СѓРґРµРЅРѕРІ СЃ РёРјРµРЅРµРј: " + name);
             System.out.println(ParticipantsRegistration.getStudentTempList());
 
 
         }
-        if (comand.equals("Р") || comand.equals("р")) {
-            System.out.println("Создана команда работяг с именем: " + name);
+        if (comand.equals("Р ") || comand.equals("СЂ")) {
+            System.out.println("РЎРѕР·РґР°РЅР° РєРѕРјР°РЅРґР° СЂР°Р±РѕС‚СЏРі СЃ РёРјРµРЅРµРј: " + name);
             System.out.println(ParticipantsRegistration.getEmployeeTempList());
         }
 
@@ -74,8 +74,8 @@ public class CreatingTeams {
                 ParticipantsRegistration.getStudentTempList().size() +
                 ParticipantsRegistration.getEmployeeTempList().size();
         if (totalParticipants < 2 ){
-            System.out.println("К сожалению для участия нужно хотя-бы 2 игрока!");
-            System.out.println("Ждем Вас в следующий раз");
+            System.out.println("Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ РґР»СЏ СѓС‡Р°СЃС‚РёСЏ РЅСѓР¶РЅРѕ С…РѕС‚СЏ-Р±С‹ 2 РёРіСЂРѕРєР°!");
+            System.out.println("Р–РґРµРј Р’Р°СЃ РІ СЃР»РµРґСѓСЋС‰РёР№ СЂР°Р·");
             return;
         }
 

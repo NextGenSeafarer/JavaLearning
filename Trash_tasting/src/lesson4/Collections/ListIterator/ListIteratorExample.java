@@ -8,18 +8,18 @@ public class ListIteratorExample {
     public static void main(String[] args) {
 
        /*
-       Задача на проверку палиндрома - т.е. читается ли слово с начала и с конца одинаково или нет
-       далее представлен просто пример работы интерфейса List Iterator
+       Р—Р°РґР°С‡Р° РЅР° РїСЂРѕРІРµСЂРєСѓ РїР°Р»РёРЅРґСЂРѕРјР° - С‚.Рµ. С‡РёС‚Р°РµС‚СЃСЏ Р»Рё СЃР»РѕРІРѕ СЃ РЅР°С‡Р°Р»Р° Рё СЃ РєРѕРЅС†Р° РѕРґРёРЅР°РєРѕРІРѕ РёР»Рё РЅРµС‚
+       РґР°Р»РµРµ РїСЂРµРґСЃС‚Р°РІР»РµРЅ РїСЂРѕСЃС‚Рѕ РїСЂРёРјРµСЂ СЂР°Р±РѕС‚С‹ РёРЅС‚РµСЂС„РµР№СЃР° List Iterator
 
-       методы:
+       РјРµС‚РѕРґС‹:
        .hasNext - boolean
        .hasPrevious - boolean
-       .next - возвращает следующий элемент
-       .previous - возвращает предыдущий элемент
+       .next - РІРѕР·РІСЂР°С‰Р°РµС‚ СЃР»РµРґСѓСЋС‰РёР№ СЌР»РµРјРµРЅС‚
+       .previous - РІРѕР·РІСЂР°С‰Р°РµС‚ РїСЂРµРґС‹РґСѓС‰РёР№ СЌР»РµРјРµРЅС‚
 
 
 
-       Минусы: работает только с латиницей!
+       РњРёРЅСѓСЃС‹: СЂР°Р±РѕС‚Р°РµС‚ С‚РѕР»СЊРєРѕ СЃ Р»Р°С‚РёРЅРёС†РµР№!
 
 
 
@@ -27,7 +27,7 @@ public class ListIteratorExample {
      */
 
 
-        String a = "Sum summus mus"; // Я - сильнейшая мышь с латинского
+        String a = "Sum summus mus"; // РЇ - СЃРёР»СЊРЅРµР№С€Р°СЏ РјС‹С€СЊ СЃ Р»Р°С‚РёРЅСЃРєРѕРіРѕ
         String s = a.replaceAll(" ", "").toLowerCase();
 
         List<Character> list = new LinkedList<>();
@@ -39,7 +39,7 @@ public class ListIteratorExample {
         }
 
         ListIterator<Character> listIterator = list.listIterator(); // by default, started from element [0]
-        ListIterator<Character> reverseListIterator = list.listIterator(list.size()); // начинает с конца
+        ListIterator<Character> reverseListIterator = list.listIterator(list.size()); // РЅР°С‡РёРЅР°РµС‚ СЃ РєРѕРЅС†Р°
 
         boolean isPalindrome = true;
 

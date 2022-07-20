@@ -7,10 +7,10 @@ public class arrayLists {
     public static void main(String[] args) {
 
 /*
-        ArrayList - это динамически изменяемый массив, необходимый для хранения любых типов данных
+        ArrayList - СЌС‚Рѕ РґРёРЅР°РјРёС‡РµСЃРєРё РёР·РјРµРЅСЏРµРјС‹Р№ РјР°СЃСЃРёРІ, РЅРµРѕР±С…РѕРґРёРјС‹Р№ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ Р»СЋР±С‹С… С‚РёРїРѕРІ РґР°РЅРЅС‹С…
 */
 
-//        методы создания ArrayList
+//        РјРµС‚РѕРґС‹ СЃРѕР·РґР°РЅРёСЏ ArrayList
 
         ArrayList<String> list1 = new ArrayList<String>();
         list1.add("st1");
@@ -20,7 +20,7 @@ public class arrayLists {
         list2.add("st3");
         list2.add("st4");
 
-        ArrayList<String> listFromList = new ArrayList<>(list2); // копирование ArrayList
+        ArrayList<String> listFromList = new ArrayList<>(list2); // РєРѕРїРёСЂРѕРІР°РЅРёРµ ArrayList
 
         List<String> list3 = new ArrayList<>();
         list3.add("st5");
@@ -29,14 +29,14 @@ public class arrayLists {
 
 
 
-        List list4 = new ArrayList(); //можно в лист поместить всё что угодно
+        List list4 = new ArrayList(); //РјРѕР¶РЅРѕ РІ Р»РёСЃС‚ РїРѕРјРµСЃС‚РёС‚СЊ РІСЃС‘ С‡С‚Рѕ СѓРіРѕРґРЅРѕ
         list4.add(4.22);
         list4.add("STROKA");
         list4.add(new StringBuffer());
 
 
-        //initial capacity - полезная функция для улучшения производительности
-        ArrayList<Integer> list5 = new ArrayList<>(200); // - тогда, при добавлении 201 элемента будет
-                                                                            //произведено расширение, а не каждый раз
+        //initial capacity - РїРѕР»РµР·РЅР°СЏ С„СѓРЅРєС†РёСЏ РґР»СЏ СѓР»СѓС‡С€РµРЅРёСЏ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊРЅРѕСЃС‚Рё
+        ArrayList<Integer> list5 = new ArrayList<>(200); // - С‚РѕРіРґР°, РїСЂРё РґРѕР±Р°РІР»РµРЅРёРё 201 СЌР»РµРјРµРЅС‚Р° Р±СѓРґРµС‚
+                                                                            //РїСЂРѕРёР·РІРµРґРµРЅРѕ СЂР°СЃС€РёСЂРµРЅРёРµ, Р° РЅРµ РєР°Р¶РґС‹Р№ СЂР°Р·
     }
 }

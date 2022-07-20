@@ -11,7 +11,6 @@ public class ParticipantsRegistration {
     private static List<Scoolar> scoolarTempList = new ArrayList<>();
     private static List<Student> studentTempList = new ArrayList<>();
     private static List<Emloyee> employeeTempList = new ArrayList<>();
-
     private static String inputName = "";
     private static int inputAge;
 
@@ -28,26 +27,25 @@ public class ParticipantsRegistration {
     }
 
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
     public static void Registration() throws IOException {
 
-        System.out.println("Èìÿ:");
+        System.out.println("Ð˜Ð¼Ñ:");
         while (true) {
             try {
                 if (!(inputName = reader.readLine()).equals("")) break;
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-            System.err.print("Íåâåðíîå èìÿ" + "\n");
+            System.err.print("ÐÐµÐ²ÐµÑ€Ð½Ð¾Ðµ Ð¸Ð¼Ñ" + "\n");
         }
-        System.out.println("Âîçðàñò:");
+        System.out.println("Ð’Ð¾Ð·Ñ€Ð°ÑÑ‚:");
 
         while (true) {
             try {
                 inputAge = Integer.parseInt(reader.readLine());
                 if (inputAge >= 0) {
                     if (inputAge < 6) {
-                        System.out.println("Òåáå ïîêà ðàíî òóò áûòü)");
+                        System.out.println("Ð¢ÐµÐ±Ðµ Ð¿Ð¾ÐºÐ° Ñ€Ð°Ð½Ð¾ Ñ‚ÑƒÑ‚ Ð±Ñ‹Ñ‚ÑŒ)");
                     } else if (inputAge >= 6 && inputAge <= 17) {
                         scoolarTempList.add(new Scoolar(inputName, inputAge));
                     } else if (inputAge > 17 && inputAge <= 27) {
@@ -58,21 +56,21 @@ public class ParticipantsRegistration {
                     break;
                 }
             } catch (NumberFormatException e) {
-                System.err.print("Íåâåðíûé âîçðàñò, ïðîáóé åù¸" + "\n");
+                System.err.print("ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚, Ð¿Ñ€Ð¾Ð±ÑƒÐ¹ ÐµÑ‰Ñ‘" + "\n");
             }
         }
 
     }
 
     public static void infinityRegistration() throws IOException {
-        System.out.println("Äëÿ íà÷àëà ñîçäàäèì êîìàíäó... " + "\n" +
-                "Òåáå íåîáõîäèìî ââåñòè èìÿ è âîçðàñò èãðîêà" + "\n");
+        System.out.println("Ð”Ð»Ñ Ð½Ð°Ñ‡Ð°Ð»Ð° ÑÐ¾Ð·Ð´Ð°Ð´Ð¸Ð¼ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñƒ... " + "\n" +
+                "Ð¢ÐµÐ±Ðµ Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð¾ Ð²Ð²ÐµÑÑ‚Ð¸ Ð¸Ð¼Ñ Ð¸ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚ Ð¸Ð³Ñ€Ð¾ÐºÐ°" + "\n");
 
-        System.out.println("|æìè Enter äëÿ äîáàâëåíèÿ è \"exit\" èëè \"âûõîä\" ÷òîáû çàêîí÷èòü ââîä èãðîêîâ|");
+        System.out.println("|Ð¶Ð¼Ð¸ Enter Ð´Ð»Ñ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ñ Ð¸ \"exit\" Ð¸Ð»Ð¸ \"Ð²Ñ‹Ñ…Ð¾Ð´\" Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð·Ð°ÐºÐ¾Ð½Ñ‡Ð¸Ñ‚ÑŒ Ð²Ð²Ð¾Ð´ Ð¸Ð³Ñ€Ð¾ÐºÐ¾Ð²|");
         while (true) {
             String ex = reader.readLine();
-            if (ex.equals("exit") || ex.equals("âûõîä") || ex.equals("Exit") || ex.equals("EXIT") || ex.equals("Âûõîä") || ex.equals("ÂÛÕÎÄ")) {
-                System.out.println("Ââîä èãðîêîâ çàêîí÷åí!");
+            if (ex.equals("exit") || ex.equals("Ð²Ñ‹Ñ…Ð¾Ð´") || ex.equals("Exit") || ex.equals("EXIT") || ex.equals("Ð’Ñ‹Ñ…Ð¾Ð´") || ex.equals("Ð’Ð«Ð¥ÐžÐ”")) {
+                System.out.println("Ð’Ð²Ð¾Ð´ Ð¸Ð³Ñ€Ð¾ÐºÐ¾Ð² Ð·Ð°ÐºÐ¾Ð½Ñ‡ÐµÐ½!");
                 break;
             } else {
                 Registration();

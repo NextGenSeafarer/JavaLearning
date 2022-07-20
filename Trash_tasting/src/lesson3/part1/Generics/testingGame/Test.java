@@ -10,7 +10,7 @@ public class Test {
         thread.join();
 
 
-        System.out.println("Привет Username!" + "\n");
+        System.out.println("РџСЂРёРІРµС‚ Username!" + "\n");
 
 //        AnnoyingCounter.count();
 

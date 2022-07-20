@@ -6,8 +6,8 @@ public abstract class Participants {
 
     @Override
     public String toString() {
-        return "Имя: " + name +
-                ", Возраст: " + age;
+        return "РРјСЏ: " + name +
+                ", Р’РѕР·СЂР°СЃС‚: " + age;
     }
 
     public Participants(String name, int age) {

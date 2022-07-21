@@ -18,16 +18,11 @@ public class ListIteratorExample {
        .previous - возвращает предыдущий элемент
 
 
-
-       Минусы: работает только с латиницей!
-
-
-
-
      */
 
 
         String a = "Sum summus mus"; // Я - сильнейшая мышь с латинского
+
         String s = a.replaceAll(" ", "").toLowerCase();
 
         List<Character> list = new LinkedList<>();
@@ -44,7 +39,7 @@ public class ListIteratorExample {
         boolean isPalindrome = true;
 
         while (listIterator.hasNext() && reverseListIterator.hasPrevious()) {
-            if (listIterator.next() != reverseListIterator.previous()) {
+            if (!(listIterator.next().equals(reverseListIterator.previous()))) {
                 isPalindrome = false;
                 break;
             }

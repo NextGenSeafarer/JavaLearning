@@ -24,7 +24,7 @@ public class LinkedListLearn {
 
         long startTime1 = System.currentTimeMillis();
         LinkedList<Integer> linkedList = new LinkedList<>();
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 100_000_000; i++) {
             linkedList.add(i);
         }
         long finishTime1 = System.currentTimeMillis();
@@ -37,7 +37,7 @@ public class LinkedListLearn {
 
         long startTime2 = System.currentTimeMillis();
         LinkedList<Integer> linkedList2 = new LinkedList<>();
-        for (int i = 0; i < 1_000_000; i++) {
+        for (int i = 0; i < 100_000_000; i++) {
             linkedList2.add(i);
         }
         System.out.println(linkedList2.get(500_000));
@@ -68,7 +68,7 @@ public class LinkedListLearn {
 
         long startTime4 = System.currentTimeMillis();
         ArrayList<Integer> arrayList2 = new ArrayList<>();
-        for (int j = 0; j < 1; j++) {
+        for (int j = 0; j < 100_000_000; j++) {
             arrayList2.add(j);
         }
         System.out.println(arrayList2.get(0));
@@ -85,7 +85,7 @@ public class LinkedListLearn {
 
         /*
 
-        Таким образом разница между ArrayList и LinkedList -
+        Таким образом разница между ArrayList и LinkedList при добавлении n элементов и взятия n/2 элемента коллекции
         3с и 14с (для 100 млн элементов) - разница в 11 секунд
         0.3с и 1.3с (для 10 млн элементов) - разница в 1 секунду
         0.03с и 0.11с (для 100 млн элементов) - разница в 0.08 секунд

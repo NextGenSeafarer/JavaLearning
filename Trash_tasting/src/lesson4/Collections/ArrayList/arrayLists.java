@@ -27,8 +27,6 @@ public class arrayLists {
         list3.add("st6");
 
 
-
-
         List list4 = new ArrayList(); //можно в лист поместить всё что угодно
         list4.add(4.22);
         list4.add("STROKA");
@@ -37,6 +35,6 @@ public class arrayLists {
 
         //initial capacity - полезная функция для улучшения производительности
         ArrayList<Integer> list5 = new ArrayList<>(200); // - тогда, при добавлении 201 элемента будет
-                                                                            //произведено расширение, а не каждый раз
+        //произведено расширение, а не каждый раз
     }
 }

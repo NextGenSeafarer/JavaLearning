@@ -1,0 +1,8 @@
+Just testing string, wanna see how the channel & buffer work, Oh that will be funny
+Imagine that cycle is unbreakable, so that will be nice to see also, GL HF
+Its just an additional text, which I'll add to original file!
+Its just an additional text, which I'll add to original file!
+			IS ANOTHER STRING FOR THE METHOD .wrap()
+Its just an additional text, which I'll add to original file!
+
+			IT IS ANOTHER STRING FOR THE METHOD .wrap()

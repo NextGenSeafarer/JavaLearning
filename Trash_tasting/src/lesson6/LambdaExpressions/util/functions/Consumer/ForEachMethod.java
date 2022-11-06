@@ -41,11 +41,10 @@ public class ForEachMethod {
 
         ArrayList<String> list1 = new ArrayList<>();
 
-        Consumer<String> stringHizenbergToBeReplacedWithAnySymbol = string -> {
-            list1.add(string.replaceAll("Hizenberg", "%".repeat("Hizenberg".length())));
+        Consumer<String> stringToBeReplacedWithAnySymbol = string -> {
+            string.replaceAll("\\w+", "*".repeat(string.length()));
         }; // создаю лямбда выражение для Consumer
-
-        list.forEach(stringHizenbergToBeReplacedWithAnySymbol); // заменяю Hizenberg на любой символ во всей коллекции
+        list.forEach(stringToBeReplacedWithAnySymbol); // заменяю Hizenberg на любой символ во всей коллекции
 
         System.out.println(list);
         System.out.println("<-------------------------------->");
@@ -69,12 +68,10 @@ public class ForEachMethod {
 
         integerLinkedList.forEach(integer -> {
             System.out.println(integer);
-            integer*=2;
+            integer *= 2;
             System.out.println(integer);
         });
         System.out.println(integerLinkedList);
-
-
 
 
     }
